@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/python3.11
+#!/Users/karthik/anaconda3/bin/python3
 
 import os
 import sys

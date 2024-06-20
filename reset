@@ -1,0 +1,8 @@
+#!/Users/karthik/anaconda3/bin/python3
+from quickstart import main
+import os
+
+if __name__ == "__main__":
+  if os.path.exists("token.json"):
+    os.remove("token.json")
+  main()

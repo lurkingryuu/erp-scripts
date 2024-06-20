@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/python3.11
+#!/Users/karthik/anaconda3/bin/python3
 
 import requests
 import erpcreds
@@ -15,4 +15,4 @@ session = requests.Session()
 
 _, ssoToken = erp.login(headers, session, ERPCREDS=erpcreds, OTP_CHECK_INTERVAL=2, LOGGING=True, SESSION_STORAGE_FILE=".erp_session")
 url = f"{TPSTUDENT_URL}?ssoToken={ssoToken}"
-webbrowser.open(url)
+webbrowser.get('firefox').open(url)
